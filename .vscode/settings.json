@@ -104,5 +104,13 @@
       "color": "red"
     }
   ],
-  "cSpell.words": ["anyenv", "goenv", "gofiber", "gopath", "goroot", "webmacs"]
+  "cSpell.words": [
+    "akhileshns",
+    "anyenv",
+    "goenv",
+    "gofiber",
+    "gopath",
+    "goroot",
+    "webmacs"
+  ]
 }
