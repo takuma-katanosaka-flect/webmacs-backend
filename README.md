@@ -5,7 +5,7 @@
 - Editor
   - VSCode
 - Infrastructure
-  - Google Firebase
+  - Heroku
 
 ## セットアップ
 
