@@ -1,12 +1,13 @@
-name: Deploy to Heroku
-"on":
+on:
   push:
-    branches: [$default-branch]
+    branches: [main]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: akhileshns/heroku-deploy@v3.8.8
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
