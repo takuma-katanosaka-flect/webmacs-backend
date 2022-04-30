@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "golang.go",
+    "toba.vsfire",
+    "cschleiden.vscode-github-actions",
+    "streetsidesoftware.code-spell-checker",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "gruntfuggly.todo-tree",
+    "aaron-bond.better-comments",
+    "ms-ceintl.vscode-language-pack-ja",
+    "42crunch.vscode-openapi",
+    "github.vscode-pull-request-github"
+  ]
+}
