@@ -1,4 +1,4 @@
-module github.com/takuma-katanosaka-flect/webmacs-backend
+module webmacs-backend
 
 go 1.18
 

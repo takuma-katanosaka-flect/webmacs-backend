@@ -1,13 +1,18 @@
 package main
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"webmacs-backend/pkg/adapter/http"
+
+	"github.com/gofiber/fiber/v2"
+)
 
 func main() {
-  app := fiber.New()
-
-  app.Get("/", func(c *fiber.Ctx) error {
-    return c.SendString("Hello, World!")
+  app := fiber.New(fiber.Config{
+    CaseSensitive: true,
+    StrictRouting: true,
   })
+
+  http.Router(app)
 
   app.Listen(":3000")
 }
