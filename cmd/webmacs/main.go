@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"webmacs-backend/pkg/adapter/http"
 
 	"github.com/gofiber/fiber/v2"
@@ -13,6 +14,15 @@ func main() {
   })
 
   http.Router(app)
+  listen(app)
+}
 
-  app.Listen(":3000")
+func listen(app *fiber.App) {
+  port := os.Getenv("PORT")
+
+  if (port == "") {
+    app.Listen(":3000")
+  }
+
+  app.Listen(":" + port)
 }
